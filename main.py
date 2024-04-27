@@ -12,7 +12,7 @@ def main():
     model = CIFARModel()
     model.train(x_train, y_train)
     
-    # Evaluate the model
+    # Evaluate the model accordingly
     loss, accuracy = model.model.evaluate(x_test, y_test)
     print(f"Test accuracy: {accuracy*100:.2f}%")
 
